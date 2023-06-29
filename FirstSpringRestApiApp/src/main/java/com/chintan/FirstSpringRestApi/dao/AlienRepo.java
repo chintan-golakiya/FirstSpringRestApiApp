@@ -11,7 +11,7 @@ public interface AlienRepo extends JpaRepository<Alien, Integer> {
 	
 	List<Alien> findByAname(String aname);
 	
-	List<Alien> findByAidGreaterThan(int aid);
+	List<Alien> findAllByAidGreaterThan(int aid);
 	
 	@Query("from Alien where aid!=?1 order by aname desc")
 	List<Alien> anyMethodName(int aid);

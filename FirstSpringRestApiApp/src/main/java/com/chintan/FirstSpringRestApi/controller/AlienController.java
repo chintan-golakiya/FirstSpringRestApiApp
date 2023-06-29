@@ -54,7 +54,7 @@ public class AlienController {
 		
 		
 		System.out.println(alienrepo.findByAname(name));
-		System.out.println(alienrepo.findByAidGreaterThan(102));
+		System.out.println(alienrepo.findAllByAidGreaterThan(102));
 		System.out.println(alienrepo.anyMethodName(102));
 		mv.setViewName("home");
 		return mv;
