@@ -65,7 +65,7 @@ public class AlienController {
 		return alienrepo.findAll();
 	}
 	
-	@GetMapping(path="/alien/{aid}",produces= {"application/xml"})
+	@GetMapping(path="/alien/{aid}",produces= {"application/json"})
 	public Optional<Alien> getAlienById(@PathVariable("aid") int aid) {
 		return alienrepo.findById(aid);
 	}
